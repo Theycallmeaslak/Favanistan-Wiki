@@ -119,6 +119,9 @@ a {color: #fff}
     padding: 4px; 
     position: sticky
 }
+.personbox:hover{outline: 20px #00f;
+    
+}
 .scrollhoverbox:hover{
     overflow: auto;
 }
