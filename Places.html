@@ -1,129 +1,125 @@
 <Head>
-    <title>Locations</title>
-    <link rel=stylesheet type="text/css" href="index.css">
-    <script src="Places.js"></script>
+  <title>Locations</title>
+  <link rel=stylesheet type="text/css" href="index.css">
+  <script src="Places.js"></script>
 </Head>
-<body> 
-    
-    <div id="topbar">    
-        
-        <a href="index.html">
-            <div class="menuelement"> 
-                <h1>Home</h1>
-            </div>
-        </a>
-        
-        <a href="People.html">
-            <div class="menuelement"> 
-                <h1>People</h1>
-            </div>
-        </a>
-        
-        <a href="Groups.html">
-            <div class="menuelement"> 
-                <h1>Factions</h1>
-            </div>
-        </a>
-        
-        <a href="Places.html">
-            <div class="menuelement"> 
-                <h1>Locations</h1>
-            </div>
-        </a>
-        
-        <a href="Misc.html">
-            <div class="menuelement"> 
-                <h1>Miscellaneous</h1>
-            </div>
-        </a>
-        
-        <a href="Gallery.html">
-            <div class="menuelement"> 
-                <h1>Gallery</h1>
-            </div>
-        </a>
+
+<body>
+
+  <div id="topbar">
+
+    <a href="index.html">
+      <div class="menuelement">
+        <h1>Home</h1>
+      </div>
+    </a>
+
+    <a href="People.html">
+      <div class="menuelement">
+        <h1>People</h1>
+      </div>
+    </a>
+
+    <a href="Groups.html">
+      <div class="menuelement">
+        <h1>Factions</h1>
+      </div>
+    </a>
+
+    <a href="Places.html">
+      <div class="menuelement">
+        <h1>Locations</h1>
+      </div>
+    </a>
+
+    <a href="Misc.html">
+      <div class="menuelement">
+        <h1>Miscellaneous</h1>
+      </div>
+    </a>
+
+    <a href="Gallery.html">
+      <div class="menuelement">
+        <h1>Gallery</h1>
+      </div>
+    </a>
+  </div>
+
+
+  <div id="mainbody">
+
+    <div>
+
+      <input onclick="document.getElementById ('valisiamap').style.display='block';
+                    document.getElementById ('favanistanmap').style.display='none'" type="button" id="valisia" tabindex="1" class="mapbutton" value="Valisia">
+
+      <input onclick="document.getElementById ('valisiamap').style.display='none';
+                    document.getElementById ('favanistanmap').style.display='block'" type="button" id="favanistan" tabindex="2" class="mapbutton" value="Favanistan">
+
+      <input onclick="document.getElementById ('valisiamap').style.display='none';
+                    document.getElementById ('favanistanmap').style.display='none'" type="button" id="exit" tabindex="2" class="mapbutton" value="X">
+
     </div>
 
-     
-<div id="mainbody">
-    
-    <div>
-        
-    <input 
-           onclick="document.getElementById ('valisiamap').style.display='block';
-                    document.getElementById ('favanistanmap').style.display='none'"
-           
-           type="button" id="valisia" tabindex="1" class="mapbutton" value="Valisia">
-        
-    <input onclick="document.getElementById ('valisiamap').style.display='none';
-                    document.getElementById ('favanistanmap').style.display='block'"
-           type="button"  id="favanistan"  tabindex="2" class="mapbutton" value="Favanistan">
-        
-    <input onclick="document.getElementById ('valisiamap').style.display='none';
-                    document.getElementById ('favanistanmap').style.display='none'"
-           type="button"  id="exit"  tabindex="2" class="mapbutton" value="X">
-        
-    </div>
-    
     <!-- Valisia Map -->
-<div class="mapcontainer" id="valisiamap">
-    <img class="map" src="img/Maps/Valisia%20Map2.png">
-</div>
+    <div class="mapcontainer" id="valisiamap">
+      <img class="map" src="img/Maps/Valisia%20Map2.png">
+    </div>
 
     <!-- Favanistan City Map -->
-<div class="mapcontainer" id="favanistanmap">
-            <div class="zoombox">
-                <div class="labelcontainer">
-                    <div class="mapheading" id="eastern-pentarchy">
-                        Eastern Pentarchy
-                    </div>
-                    <div class="mapheading" id="western-pentarchy">
-                        Western Pentarchy
-                    </div>
-                    <div class="mapheading" id="northern-pentarchy">
-                        Northern Pentarchy
-                    </div>
-                    <div class="mapheading" id="southern-pentarchy">
-                        Southern Pentarchy
-                    </div>
-                    <div class="mapheading" id="favans-pentarchy">
-                        Favans Pentarchy
-                    </div>
-                    <div class="maplabel1" id="pit-fights">
-                        The Warhole
-                    </div>
-                    <div class="maplabel1" id="tavern1">
-                        The Bleeding Fist 
-                    </div>
-                    <div class="maplabel1" id="warschool">
-                        Monstery Academy
-                    </div>
-                    <div class="maplabel1" id="cornerstone">
-                        Cornerstone Bar
-                    </div>
-                    <div class="maplabel1" id="theivesguild1">
-                        Hanged Hardens
-                    </div>
-                    <div class="maplabel1" id="RedFacton">
-                        Red Faction Office
-                    </div>
-                    <div class="maplabel1" id="Estate1">
-                        Yalgar Mansion
-                    </div>
-                    <div class="maplabel1" id="Company1">
-                        DrexanCorp HQ
-                    </div>
-                    <div class="maplabel1" id="Factory1">
-                        DrexanCorp Factory
-                    </div>
+    <div class="mapcontainer" id="favanistanmap">
+      <div class="zoombox">
+        <div class="labelcontainer">
+          <div class="mapheading" id="eastern-pentarchy">
+            Eastern Pentarchy
+          </div>
+          <div class="mapheading" id="western-pentarchy">
+            Western Pentarchy
+          </div>
+          <div class="mapheading" id="northern-pentarchy">
+            Northern Pentarchy
+          </div>
+          <div class="mapheading" id="southern-pentarchy">
+            Southern Pentarchy
+          </div>
+          <div class="mapheading" id="favans-pentarchy">
+            Favans Pentarchy
+          </div>
+          <div class="maplabel1" id="pit-fights">
+            The Warhole
+          </div>
+          <div class="maplabel1" id="tavern1">
+            The Bleeding Fist
+          </div>
+          <div class="maplabel1" id="warschool">
+            Monstery Academy
+          </div>
+          <div class="maplabel1" id="cornerstone">
+            Cornerstone Bar
+          </div>
+          <div class="maplabel1" id="theivesguild1">
+            Hanged Hardens
+          </div>
+          <div class="maplabel1" id="RedFacton">
+            Red Faction Office
+          </div>
+          <div class="maplabel1" id="Estate1">
+            Yalgar Mansion
+          </div>
+          <div class="maplabel1" id="Company1">
+            DrexanCorp HQ
+          </div>
+          <div class="maplabel1" id="Factory1">
+            DrexanCorp Factory
+          </div>
 
 
-                </div>
-            <img class="map" src="img/Maps/Favanistan%20Map.png">
         </div>
+        <img class="map" src="img/Maps/Favanistan%20Map.png">
+      </div>
     </div>
 
 
-        
-        
-</div>
+
+
+  </div>
