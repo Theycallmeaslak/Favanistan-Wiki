@@ -174,39 +174,39 @@ a {
 }
 
 /*person ID tags*/
-#caijunnian {
+#caijunnian .personimage{
   background-image: url(img/People/Cai%20Junnian%20150px.png)
 }
 
-#favan {
+#favan .personimage{
   background-image: url(img/People/Favan%20150px.png)
 }
 
-#elia {
+#elia .personimage{
   background-image: url(img/People/Elia%20150px.png)
 }
 
-#julianos {
+#julianos .personimage{
   background-image: url(img/People/Julianos%20150px.png)
 }
 
-#mcknight {
+#mcknight .personimage{
   background-image: url(img/People/mcKnight%20150px.png)
 }
 
-#juliet {
+#juliet .personimage{
   background-image: url(img/People/Juliet%20150px.png)
 }
 
-#fennic {
+#fennic .personimage{
   background-image: url(img/People/Fennic%20150px.png)
 }
 
-#ira {
+#ira .personimage{
   background-image: url(img/People/Ira%20150px.png)
 }
 
-#quai {
+#quai .personimage{
   background-image: url(img/People/Quai%20150px.png)
 }
 
@@ -214,15 +214,15 @@ a {
   background-image: url(img/People/Grendur%20150px.png)
 }
 
-#hazel {
+#hazel .personimage{
   background-image: url(img/People/Hazel%20150px.png)
 }
 
-#eradin {
+#eradin .personimage{
   background-image: url(img/People/Eradin%20150px.png)
 }
 
-#udrex {
+#udrex .personimage{
   background-image: url(img/People/Udrex%20150px.png)
 }
 
