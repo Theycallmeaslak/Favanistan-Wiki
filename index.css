@@ -1,0 +1,372 @@
+body {
+    background-color: #000;
+    background-image: url(/img/backdrop.png);
+    background-repeat: repeat-y;
+    background-attachment:fixed;
+    background-clip: inherit;
+    background-position: center;
+}
+h1 {font-size: 19px;}
+p {font-size: 11px; display: inline-block;}
+a {color: #fff}
+
+/*page layout*/
+#mainbody {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 10px;
+    height: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*top menu layout*/
+#topbar {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+.menuelement {
+    background-color: rgba(255,255,255,0.5);
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+    display: inline-block;
+    font-family: cambria;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    text-shadow: 0px 0px 3px #000;
+    transition: 0.7s;
+}
+.menuelement:hover {
+        box-shadow: 0px 0px 20px #fff;
+    }
+
+/*mundane text layout*/
+#ingress,{
+    margin-top:5px;
+    margin-bottom:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    }
+.paragraph{
+    margin-top:3px;
+    margin-bottom:3px;
+    }
+.textblock{
+    margin-top:15px;
+    margin-bottom:15px;}
+
+
+/*person page layout*/
+#peopleflex{
+    padding: 20px;
+    width: 100%; }
+.personbox {
+    width: 45%;
+    height: 162px; 
+    margin: 20px;
+    padding: 10px; 
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    outline-color: #aaa;
+    outline-style: solid;
+    outline-width: 1px; 
+    box-shadow: 0px 0px 30px #000;
+}
+.scrollhoverbox{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    margin: 3px;
+    text-align: left;
+
+}
+.textbox {
+    display: flex; 
+    flex-direction: column; 
+    margin: 11px;
+    color: #fff;
+
+    text-overflow: ellipsis;
+    border-left-style: solid; 
+    border-width: 7px;
+    border-color: #555;
+    padding: 8px;
+    }
+.personparagraph {
+    display: inline-block; 
+    margin: 5px;}
+.footnote{
+    font-style: italic;
+    display: inline-block; 
+    font-size: 10px;
+    margin: 5px;
+    color: #ccc
+}
+.personname {
+    text-align: center; 
+    font-size: 19px; 
+    margin: 8px; 
+    padding: 4px; 
+    position: sticky
+}
+.scrollhoverbox:hover{
+    overflow: auto;
+}
+.personimage{
+    background-color: #222;
+    padding: 75px;
+    display: block;
+    margin: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.personimage:hover{
+    border-radius:0%;
+    box-shadow: 0px 0px 10px #fff;}
+
+/*person ID tags*/
+#caijunnian{background-image: url(img/People/Cai%20Junnian%20150px.png)}
+#favan{background-image: url(img/People/Favan%20150px.png)}
+#elia{background-image: url(img/People/Elia%20150px.png)}
+#julianos{background-image: url(img/People/Julianos%20150px.png)}
+#mcknight{background-image: url(img/People/mcKnight%20150px.png)}
+#juliet{background-image: url(img/People/Juliet%20150px.png)}
+#fennic{background-image: url(img/People/Fennic%20150px.png)}
+#ira{background-image: url(img/People/Ira%20150px.png)}
+#quai{background-image: url(img/People/Quai%20150px.png)}
+#grendur{background-image: url(img/People/Grendur%20150px.png)}
+#hazel{background-image: url(img/People/Hazel%20150px.png)}
+#eradin{background-image: url(img/People/Eradin%20150px.png)}
+#udrex{background-image: url(img/People/Udrex%20150px.png)}
+
+/*retired tag*/
+.halfbox{
+    width: 50%; 
+    display: inline-block;
+    text-align: center}
+    /*css simplification classes*/
+    .left{float:left}
+    .right{float:right}
+
+
+/*groups/factions layout*/
+.factionbox{
+    height:300px;
+    width:300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 30px #000;
+    outline-color: #aaa;
+    outline-style: solid;
+    outline-width: 2px; 
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    float: left;
+}
+.factionbox:hover{
+    overflow-x: hidden;
+    overflow-y: auto;}
+.row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.factiontitle{
+    
+        z-index: 5;
+        position: sticky;
+        text-align: center;
+        border-bottom-style: solid; 
+        border-width: 7px;
+        border-color: #555;
+        padding: 5px;
+        margin: 10px;
+        font-family: 'Ubuntu';
+}
+.factiontext{text-align: left; margin: 4px;}
+.flagicon {
+    position: sticky; 
+    height: 300px; 
+    width: 300px; 
+    margin-top: 12px}
+.unimportant {
+    opacity: 0.3; 
+    transition: 1s}
+.unimportant:hover {opacity: 1}
+
+
+/*map class tags*/
+.mapbutton {
+    background-color: rgba(255,255,255,0.5);
+    margin-right: 20px;
+    padding: 12px 16px;
+    font-size: 15px;
+    display: inline-block;
+    font-family: cambria;
+    color: #fff;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    text-shadow: 0px 0px 3px #000;
+    transition: 0.7s; 
+}
+#mapbody{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 10px;
+    height: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+.mapcontainer{
+    position: relative;
+    height: 95%;
+    width: 100%;
+    display: none;
+    overflow: scroll;
+    resize: both;
+    top: 10px
+}
+.map {
+    z-index: -10;
+    float: left;
+    
+}
+.labelcontainer {
+    position: relative;
+    font-family: cambria;
+}
+
+/*map labels class tags*/
+.mapheading, .pentarhytext { 
+    text-shadow: 0px 0px 10px #000, 0px 0px 10px #000;
+    color: #fff;
+    z-index: 10;
+    font-size: 172px;
+    padding: 10px;
+    position: absolute;
+    opacity: 0.5;
+    text-align: center;
+    transition: 0.4s;
+
+}
+.maplabel1 { 
+    color: #fff;
+    z-index: 10;
+    font-size: 32px;
+    padding: 10px;
+    position: absolute;
+    opacity: 0.5;
+    text-align: center;
+    transition: 0.4s
+}
+.maplabel1:hover { 
+    opacity: 1;
+    text-shadow: 0px 0px 10px #000, 0px 0px 10px #000;
+}
+.mapheading:hover, .pentarchytext {
+    opacity: 1;
+    
+    visibility: visible;
+}
+.pentarhytext {visibility: hidden;}
+
+/*map ID tags*/
+#eastern-pentarchy {
+    left: 4350px;
+    top: 650px; 
+}
+#western-pentarchy {
+    left: 350px;
+    top: 1390px; 
+}
+#northern-pentarchy {
+    left: 2000px;
+    top: 350px; 
+}
+#southern-pentarchy {
+    left: 950px;
+    top: 2699px; 
+}
+#favans-pentarchy{
+    left: 3950px;
+    top: 2900px; 
+}
+#pit-fights{
+    left: 4382px;
+    top: 1715px; 
+}
+#tavern1{
+    left: 4270px;
+    top: 1485px; 
+}
+#warschool{
+    left: 4230px;
+    top: 1720px; 
+    transform: rotate(4deg);
+}
+#cornerstone{
+    left: 4060px;
+    top: 1460px; 
+}
+#theivesguild1{
+    left: 4645px;
+    top: 1690px;
+    transform: rotate(-10deg);
+}
+#RedFacton{
+    left: 4580px;
+    top: 1790px;
+    transform: rotate(15deg);
+}
+#Estate1{
+    left: 4100px;
+    top: 1584px; 
+    transform: rotate(6deg);
+}
+#Company1{
+    left: 4350px;
+    top: 1308px; 
+    transform: rotate(-9deg);}
+#Factory1{
+    left: 4460px;
+    top: 1315px; 
+    transform: rotate(76deg);}
+#valisiamap, #favanistanmap,{display: none}
+
+/* music layour */
+.musicheading {
+    font-family: cambria;
+    text-align: center; 
+    font-size: 19px; 
+    margin: 8px; 
+    padding: 4px; }
+.soundtrack {
+    width: 300px;
+    background-color: #000;
+    opacity: 0.8;
+    margin: 20px;
+    display: inline-block;
+    padding: 5px;
+    border-width: 2px;
+    border-style: solid;
+    
+}
+#musicgallery{display: flex;
+justify-content: center;}
