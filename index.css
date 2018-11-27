@@ -449,12 +449,35 @@ a {
 }
 #timelinecontainer {height: 820px;}
 .timelineheading {
+    display: inline-block;
     background-color: rgba(0,0,0,0.8);
     padding: 5px;
+    
     top: -5px;
     border-radius: 3px;
 }
+.timelineheading .timelineinfobox{
+    visibility: collapse;
+    height: 0px;
+    opacity: 0;
+    z-index: 117;
+    top: 10px;
+    width: 60px;
+    transition: 0.4s;
+}
+
+.timelineheading:hover .timelineinfobox{
+    display: block;
+    z-index: 117;
+    height: auto;
+    width: 200px;
+    margin-top: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
 .timestamp{
+    transition: 0.4s;
     text-shadow: 0px 0px 2px #000,0px 0px 2px #000;
     z-index: 1;
     padding-left: 8px;
@@ -465,15 +488,15 @@ a {
     border-left-color: #fff; }
 .smallupper{
     z-index: 4;
-    padding-bottom: 50px;
+    height: 78px;
     top:-78;}
 .upper{
     z-index: 3;
-    padding-bottom: 100px;
+    height:128;;
     top:-128;}
 .wayupper{
     z-index: 2;
-    padding-bottom: 150px;
+    height: 178px;
     top:-178;
     
 }
