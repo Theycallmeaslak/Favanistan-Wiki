@@ -452,11 +452,11 @@ a {
     display: inline-block;
     background-color: rgba(0,0,0,0.8);
     padding: 5px;
-    
     top: -5px;
     border-radius: 3px;
 }
 .timelineheading .timelineinfobox{
+    font-size: 14px;
     visibility: collapse;
     height: 0px;
     opacity: 0;
