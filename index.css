@@ -448,29 +448,32 @@ a {
     width: 100%;
 }
 #timelinecontainer {height: 820px;}
+.timelinfobox{
+    z-index: 117;
+}
 .timelineheading {
+    z-index: 2;
     display: inline-block;
     background-color: rgba(0,0,0,0.8);
     padding: 5px;
     top: -5px;
     border-radius: 3px;
 }
+
+
 .timelineheading .timelineinfobox{
     font-size: 14px;
     visibility: collapse;
     height: 0px;
     opacity: 0;
-    z-index: 117;
     top: 10px;
-    width: 60px;
+    width: 200px;
     transition: 0.4s;
 }
 
 .timelineheading:hover .timelineinfobox{
     display: block;
-    z-index: 117;
     height: auto;
-    width: 200px;
     margin-top: 10px;
     opacity: 1;
     visibility: visible;
@@ -485,32 +488,30 @@ a {
     left: 50%;
     border-left-width: 1px;
     border-left-style: solid;
-    border-left-color: #fff; }WS
+    border-left-color: #fff; }
+
+
 .smallupper{
-    z-index: 4;
     height: 78px;
-    top:-78;}
+    top: -78;}
 .upper{
-    z-index: 3;
     height:128;;
     top:-128;}
 .wayupper{
-    z-index: 2;
     height: 178px;
     top:-178;
     
 }
+
+
 .lower{
-    
-    z-index: 3;
     height: 100px;
-}S
+}
 .lower .timelineheading{ 
     position: relative;
     top: 72px;
 }
 .smalllower{
-    z-index: 4;
     height: 70px;
 }
 .smalllower .timelineheading{ 
@@ -518,16 +519,15 @@ a {
     top: 42px;
 }
 .waylower{
-    
-    z-index: 4;
     height: 150px;
 }
 .waylower .timelineheading{ 
     position: relative;
     top: 122px;
 }
+
+
 .marker{
-    z-index: 2;
     outline-color: #fff;
     outline-style: solid;
     outline-width: 1px;
@@ -583,7 +583,7 @@ a {
     #spell2{
             left:655px
     }
-    
+    /* modern times */
     #landing{
         left:1150px;
     }
@@ -633,7 +633,7 @@ a {
     }
     #seventh{
         left: 840px;   
-    }
+    }S
     #eighth{
         left: 960px;   
     }
@@ -654,3 +654,6 @@ a {
         left: 1560px;  
     
 }
+
+.timelineinfobox {
+    z-index: 4 !important;}
