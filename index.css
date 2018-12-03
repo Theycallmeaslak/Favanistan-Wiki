@@ -83,6 +83,7 @@ a {
   width: 100%;
 }
 .personbox {
+  --expanded: 0; /*Brukes for å holde styr på om boksen er utvidet eller ikke*/
   width: 45%;
   height: 162px;
   margin: 20px;
@@ -93,12 +94,14 @@ a {
   outline-style: solid;
   outline-width: 1px;
   box-shadow: 0px 0px 30px #000;
-  transition: height 0.5s;
+  transition: 0.5s;
 }
+/*
 .personbox:target {
     height: auto;
     opacity: 1;
 }
+*/
 .scrollhoverbox {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -137,7 +140,7 @@ a {
   margin: 8px;
   padding: 4px;
   position: sticky;
-    
+
 }
 .scrollhoverbox:hover {
   overflow: auto;
@@ -500,28 +503,28 @@ a {
 .wayupper{
     height: 178px;
     top:-178;
-    
+
 }
 
 
 .lower{
     height: 100px;
 }
-.lower .timelineheading{ 
+.lower .timelineheading{
     position: relative;
     top: 72px;
 }
 .smalllower{
     height: 70px;
 }
-.smalllower .timelineheading{ 
+.smalllower .timelineheading{
     position: relative;
     top: 42px;
 }
 .waylower{
     height: 150px;
 }
-.waylower .timelineheading{ 
+.waylower .timelineheading{
     position: relative;
     top: 122px;
 }
@@ -545,19 +548,19 @@ a {
 }
     #strife{
         left:160px;
-    
+
 }
     #cohort{
         left:170px;
-    
+
 }
     #collapse{
         left:190px;
-    
+
 }
     #republic{
         left:193px;
-    
+
     }
     #betrayal {left:400px;
 
@@ -569,7 +572,7 @@ a {
         left:425px;
 }
     #defeat1{
-        left: 563px;   
+        left: 563px;
     }
     #defeat2{
         left: 600px
@@ -614,45 +617,45 @@ a {
 
     }
     #first{
-        left: 120px;   
+        left: 120px;
     }
     #second{
-        left: 240px;   
+        left: 240px;
     }
     #third{
-        left: 360px;   
+        left: 360px;
     }
     #fourth{
-        left: 480px;   
+        left: 480px;
     }
     #fifth{
-        left: 600px;   
+        left: 600px;
     }
     #sixth{
-        left: 720px;   
+        left: 720px;
     }
     #seventh{
-        left: 840px;   
+        left: 840px;
     }S
     #eighth{
-        left: 960px;   
+        left: 960px;
     }
     #nineth{
-        left: 1080px;   
+        left: 1080px;
     }
     #tenth{
         width: 400px;
-        left: 1200px;   
+        left: 1200px;
     }
     #eleventh{
-        left: 1320px;   
+        left: 1320px;
     }
     #twelth{
-        left: 1440px;   
+        left: 1440px;
     }
     #thirteenth{
-        left: 1560px;  
-    
+        left: 1560px;
+
 }
 
 .timelineinfobox {

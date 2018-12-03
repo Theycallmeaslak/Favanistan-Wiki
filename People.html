@@ -1,357 +1,389 @@
 <Head>
-    <title>Characters</title>
-    <link rel=stylesheet type="text/css" href="index.css">
-    <script src="People.js"#></script>
+  <title>Characters</title>
+  <link rel=stylesheet type="text/css" href="index.css">
+  <script src="People.js" #></script>
+  <script src="JQuery.js"></script>
+  <script src="People_JQuery.js"></script>
 </Head>
+
 <body>
 
-    <div id="topbar">
+  <div id="topbar">
 
-        <a href="index.html">
-            <div class="menuelement">
-                <h1>Home</h1>
-            </div>
-        </a>
+    <a href="index.html">
+      <div class="menuelement">
+        <h1>Home</h1>
+      </div>
+    </a>
 
-        <a href="People.html">
-            <div class="menuelement selected">
-                <h1>People</h1>
-            </div>
-        </a>
+    <a href="People.html">
+      <div class="menuelement selected">
+        <h1>People</h1>
+      </div>
+    </a>
 
-        <a href="Groups.html">
-            <div class="menuelement">
-                <h1>Factions</h1>
-            </div>
-        </a>
+    <a href="Groups.html">
+      <div class="menuelement">
+        <h1>Factions</h1>
+      </div>
+    </a>
 
-        <a href="Places.html">
-            <div class="menuelement">
-                <h1>Locations</h1>
-            </div>
-        </a>
-        
-        <a href="Timeline.html">
-            <div class="menuelement">
-                <h1>Timeline</h1>
-            </div>
-        </a>
+    <a href="Places.html">
+      <div class="menuelement">
+        <h1>Locations</h1>
+      </div>
+    </a>
 
-        <a href="Misc.html">
-            <div class="menuelement">
-                <h1>Miscellaneous</h1>
-            </div>
-        </a>
+    <a href="Timeline.html">
+      <div class="menuelement">
+        <h1>Timeline</h1>
+      </div>
+    </a>
 
-        <a href="Gallery.html">
-            <div class="menuelement">
-                <h1>Gallery</h1>
-            </div>
-        </a>
+    <a href="Misc.html">
+      <div class="menuelement">
+        <h1>Miscellaneous</h1>
+      </div>
+    </a>
+
+    <a href="Gallery.html">
+      <div class="menuelement">
+        <h1>Gallery</h1>
+      </div>
+    </a>
 
     <!--"topbar" closing tag-->
+  </div>
+
+  <div id="mainbody">
+    <div id="maintitle">
+      <h1>People</h1>
+    </div>
+    <div id="ingress">
+      <p1>This is the People compendium, here you can read about specific characters</p1>
     </div>
 
-    <div id="mainbody">
-        <div id="maintitle"><h1>People</h1></div>
-        <div id="ingress"><p1>This is the People compendium, here you can read about specific characters</p1></div>
+
+    <h1 class=peoplesheading>Player characters</h1>
+
+    <div id="peopleflexpc">
 
 
-        <h1 class=peoplesheading>Player characters</h1>
-
-        <div id="peopleflexpc">
-
-
-            <!-- Grendur Thermond -->
-                <a href="#grendur">
-                    <div class="personbox" id="grendur">
-                    <div class="personimage">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname"> Grendur Thermond </div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1> Grendur thermod is a dwarvern blacksmith, as his father was before him and his father before him. He was recently commissioned as a lumberer for the valisian expedition, and with the pormise of fortune and fame set out across the high seas.</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>A powerful man, he crushes and destroys enemies with his might battleaxe. Indeed the same battleaxe that delivered the end to the might sorceress lady Elia. A traditonal dwarf through and through, he loves nothing more than drink and work.</p1>
-                                </div>
-                            <div class="footnote">
-                            <p1>Played by Isak Isaksen.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-                </div></a>
-
-            <!-- Captain Kirgrim Fennic -->
-                 <a href="#fennic">
-                    <div class="personbox" id="fennic">
-                    <div class="personimage" id="fennic">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">Captain Kirgrim Fennic </div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1>The captain fennic is a mysterious creature. A veteran of several armed conflicts, he has served in some of the most distinguished positions in the younish military. A patriot through and through, he is fully devoted to the cause of his nation, and after the tragic death of mcKnight and dissapearance of Juliet, he has taken on the mantle of leadership. </p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>This ferocious hobgoblin fights with powerful sorcery. He does not make jokes or mess around, but he is one you can count on when you need him. Brave and expirenced as few other, he is not to be trifeled with, despite his short stature.</p1>
-                                </div>
-                            <div class="footnote">
-                            <p1>Played by Jakob Jensen.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-                </div></a>
-
-            <!-- Cynthia Hazelwood -->
-                <a href="#hazel"><div class="personbox unimportant" id="hazel">
-                    <div class="personimage" id="hazel">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname"> Cynthia Hazelwood </div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1> Cynthia hazelwood, sometimes styled as Hazlewud, was the previous commander of the exalian expedition. Her beauty is beyond compare, with flaming locks of auborn hair, with terish skin and eyes of emerald green She was injured by the younish Captain Fennic, before she fell in battle to one of Favans druids</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>The younish expedition came across her bruised, battered and injured. They saved her from the druid and quickly took her back to the ship. When she came too she didn't seem to be of much use, but she was eventually saved by her Exalian compatriots. To which end remains still unkown.</p1>
-                                </div>
-                                <div class="footnote">
-                            <p1>This was supposed to be Hannas character. I helped her make it and I was super happy with it. Shame she never played it.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-</div></a>
-            
-            <!-- Ira -->
-                <a href="#ira"><div class="personbox unimportant" id="ira">
-                    <div class="personimage" id="ira">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">Ira</div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1>Much is yet to be understood of this little kobold. She truly tresures her friends and has protected them and taken care of them through thick and thin, always being a happy and hopeful despite being surrounded by cynics and delinquents. </p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>The troubadouritz always has encouraging words and soothing music avaliable at a moments notice. She has saved the party from certain death many a time.</p1>
-                                </div>
-                            <div class="footnote">
-                            <p1>On hiatus. Previously played by Mathilde Nordahl.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-                    </div> 
-            </a>
-
-            <!-- Quai Lann the banished -->
-                <a href="#quai"><div class="personbox unimportant" id="quai">
-                    <div class="personimage" id="quai">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname"> Quai Lann the banished </div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1> Banished from his home after his repugnant life of crime, this rouge set out on his own to create his own fortune. In recent times he has been traveling valisisa with the inctention of making a quick fortune of some of the anicent treasure buried there.</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>His plan was quickly complicated though, when he met a band of merry heroes from Youn. More intrested in some prestigious patriotic mission than simple fortune.</p1>
-                                </div>
-                              <div class="footnote">
-                            <p1>On hiatus. Previously played by Richard Dooley.</p1>
-                                </div>
-                        </div>
-                    </div>
-                    </div></a>
-
-
-
-        <!--"peopleflexpc" closing tag-->
+      <!-- Grendur Thermond -->
+      <div class="personbox" id="grendur">
+        <div class="personimage">
         </div>
+        <div class="textbox">
+          <div class="personname"> Grendur Thermond </div>
 
-        <h1 class=peoplesheading>Nonplayer characters</h1>
-        <div id="peopleflexNpc">
-
-
-            <!-- Cai Junnian -->
-                <a href="#caijunnian"><div class="personbox unimportant" id="caijunnian">
-                    <div class="personimage" id="caijunnian">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">Cai Junnian</div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1>Cai Junnian was a military mastermind in the Taranian army, but he was shunned and disregarderd for his war mongering retoric. Eventually he garnered a big following, and led them in a campain against Exalia. Despite winning several victories, the campaing eventually became untenable by the exalians superior numbers. Despite his defeat his army still desried to follow him, and so what was meant to just be a mere military encampent quickly became a bustling city. Cai junnian, the general now turned king was not one for the civilian, but continued out of a sense of duty. He delgated duites to individuals he deemd most fit for them, and gave no preffirential treatment towards his close firend. He would be remebered as a stern and fair ruler for centuries, and he set the example for all the following general-kings of the first cohort.</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>Nowadays it is belived that his body rests in the kingshill burial site, along with many other great heroes of the first cohort, but his spirit haunts Kaer Lorg, the fortress he ruled from. It is belived that if his spirit and body is reunited he will grow an order of magnitude more powerful.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-                </div></a>
-
-            <!-- Demon King Favan -->
-                <a href="#favan"><div class="personbox" id="favan">
-                    <div class="personimage" id="favan">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">Demon king Favan</div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1>Favan strated building the city of favanistan some ten thousand years ago. He made the city from nothing but the labour of his own two hand. Through the milennia the city grew into a bustling metropolis. These days favan is old and tired, he is now working to secure his legacy and have someone carry on in his stead when he is gone. Originally the prince, Sturm, was the one meant to succed Favan, but sturm betrayed his father and was banished from the realm</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>400 years ago Favan opened a portal to another realm, Valisia. He and his armies went there and wrought havoc on the few nations there, intent on using the land as a safe haven for people dear to him. The inhabitants of Valisia were either killed or brought back to favanistan as slaves. He made the land completely unlivable for regular mortals, and cast a spell upon the world to erase all knowledge of it's history.</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>These days Favan is grey and old, and his body is frail and weakened. Although he remains more powerful than any living mortals and all the demons in the realm. Having wisened up over the years, he now seeks to secure a succession with no surprises, although recent events has complicated that plan signiicantly. Whispers and rumours at court makes the looming threat of a succession crisis, civil war and anarchy all the more obvious to the man himself. </p1>
-                                </div>
-                        </div>
-
-                    </div>
-                                </div></a>
-
-            <!-- Lady Elia Favansdottir -->
-                <a href="#elia"><div class="personbox" id="elia">
-                    <div class="personimage" id="elia">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">Lady Elia Favansdottir</div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1>The Second child of favan, Lady elia became heiress to Favans great kingdom after Sturm, favans firstborn son, betrayed him. Favan opened a porta lto valisia and sent lady elia there to protect her from the wrath of demon king sturm, and other that might conspire against Favan.</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>Lady Elia has lived in valisia most her life, and the only contact she has had with her homeland is the odd letter from her father. She was recently killed, appartenly by a gang of brutes that broke into her home, the scene shows signs of a herculian stuggle, she fought to her last breath.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-                    </div></a>
-
-            <!-- Pentarch Julian -->
-                <a href="#julianos"><div class="personbox" id="julianos">
-                    <div class="personimage" id="julianos">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">Pentarch Julianos</div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1>One of the pentarchs ruling favanistan. He is usually close to Favan, acting as a one man personal guard. His imposing nature lets him rule with unquestioned authority in his pentarchy, even in absence.</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>Strong beyond measure, and loyal to a fault, he is instrumental in favans personal security, especially as old age increasingly weakens the man himself. Chatter at the court seems to be that in the coming succession crisis, Julianos will be the kingmaker.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-        </div></a>
-
-            <!-- Captain Macknight -->
-                <a href="#mcknight"><div class="personbox unimportant" id="mcknight">
-                    <div class="personimage" id="mcknight">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">Captain mcKnight</div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1>A brave and expirienced captain in the younish navy, he was sent to valisia on a top secret mission to secure the strange metal, IX-25, for the upcoming war effort. He met his end there, when his encampment was attacked by an Exalian expedition party, competing for that very same metal.</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>But even from beyond the grave, his group of officers wrought havoc upon the Exalians, it is said that all but three were killed, and quite gruesomely as well. With the mysterious absence of his first mate, Juliet, his command has now passed on to Kirgrim fennic, a captain in the younish army.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-                </div></a>
-
-            <!-- First mate Juliet -->
-                <a href="#juliet"><div class="personbox unimportant" id="juliet">
-                    <div class="personimage" id="juliet">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">First mate Juliet</div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1>First mate juliet, an overly competent and driven woman served as first mate to McKnight before his untimely, she wears an eyepatch on her left eye, simmilarly to captain Fennic. She was never let in on the real reason for the expedition, and was therefore always annoyed with it, seeing it as a pointless excercise in prestige.</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>After the ship was attacked by the Exalians, Juliet was nowhere to be found. Wether she was captured, killed or escaped yet remains a mystery.</p1>
-                                </div>
-                        </div>
-
-                    </div>
-</div></a>
-
-            <!-- Eradin Lorekeeper -->
-                <a href="#eradin"><div class="personbox unimportant" id="eradin">
-                    <div class="personimage" id="eradin">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname">Eradin Lorekeeper</div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1> Historian, mathematician, philosopher, engineer and politcal maverick- Eradin's theories on the human soul and warrior spirit was instumental in turning the first cohort from a disillusioned army to a powerful nation-state. </p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>His work, while instrumentaal, consumed the man, and he grew restless and obsessive, which is why his spirit yet haunts kaer Lorg. His body rests in the cohorts old library. If his spirit was reunited with his body, his mind might once again become unfractured and his keen insight and knowledge could provide a powerful asset for all he considers allies.</p1>
-                                </div>
-                                <div class="footnote">
-                            <p1>I made up a name on the fly during a session and forgot about it. I don't think he was always called Eradin. </p1>
-                                </div>
-                        </div>
-
-                    </div>
-</div></a>
-
-            <!-- Udrex Firebearer -->
-                <a href="#udrex"><div class="personbox unimportant" id="udrex">
-                    <div class="personimage" id="udrex">
-                    </div>
-                    <div class="textbox">
-                        <div class="personname"> Udrex Firebearer </div>
-
-                        <div class="Scrollhoverbox">
-                                <div class="personparagraph">
-                            <p1> A brave and recognized captain from the hayday of the first cohort. He led plenty platoons into battle beneath the fire standard that would become his nickname. He was always facinated with fire, and most of his battleplans often featured traps made with tar and oil. He believed that fire was the purest of the four elements, and as it was the only element without substance he believed it to be the most mythical as well</p1>
-                                </div>
-                                <div class="personparagraph">
-                            <p1>He was relieved from duty after a massive fire in the king-generals estate. Although no concrete evidence was found linking him to the fire, he was still at the wrong place at the wrong time. When the next unexplained fire came about the war council lost their patience, he was tied to a pyre and burned, being executed the same way he had executed so many in his military career. If his ashes was reunited with his spirit he might have quite the interesting story to tell</p1>
-                                </div>
-                                <div class="footnote">
-                            <p1>I made up a name on the fly during a session and forgot about it. I don't think he was always called Udrex</p1>
-                                </div>
-                        </div>
-
-                    </div>
-</div></a>
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1> Grendur thermod is a dwarvern blacksmith, as his father was before him and his father before him. He was recently commissioned as a lumberer for the valisian expedition, and with the pormise of fortune and fame set out across the
+                high seas.</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>A powerful man, he crushes and destroys enemies with his might battleaxe. Indeed the same battleaxe that delivered the end to the might sorceress lady Elia. A traditonal dwarf through and through, he loves nothing more than drink
+                and work.</p1>
+            </div>
+            <div class="footnote">
+              <p1>Played by Isak Isaksen.</p1>
+            </div>
+          </div>
 
         </div>
-        <!--"peopleflexNpc" closing tag-->
+      </div>
+
+      <!-- Captain Kirgrim Fennic -->
+      <div class="personbox" id="fennic">
+        <div class="personimage" id="fennic">
+        </div>
+        <div class="textbox">
+          <div class="personname">Captain Kirgrim Fennic </div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1>The captain fennic is a mysterious creature. A veteran of several armed conflicts, he has served in some of the most distinguished positions in the younish military. A patriot through and through, he is fully devoted to the cause
+                of his nation, and after the tragic death of mcKnight and dissapearance of Juliet, he has taken on the mantle of leadership. </p1>
+            </div>
+            <div class="personparagraph">
+              <p1>This ferocious hobgoblin fights with powerful sorcery. He does not make jokes or mess around, but he is one you can count on when you need him. Brave and expirenced as few other, he is not to be trifeled with, despite his short
+                stature.</p1>
+            </div>
+            <div class="footnote">
+              <p1>Played by Jakob Jensen.</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Cynthia Hazelwood -->
+      <div class="personbox unimportant" id="hazel">
+        <div class="personimage" id="hazel">
+        </div>
+        <div class="textbox">
+          <div class="personname"> Cynthia Hazelwood </div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1> Cynthia hazelwood, sometimes styled as Hazlewud, was the previous commander of the exalian expedition. Her beauty is beyond compare, with flaming locks of auborn hair, with terish skin and eyes of emerald green She was injured by
+                the younish Captain Fennic, before she fell in battle to one of Favans druids</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>The younish expedition came across her bruised, battered and injured. They saved her from the druid and quickly took her back to the ship. When she came too she didn't seem to be of much use, but she was eventually saved by her
+                Exalian compatriots. To which end remains still unkown.</p1>
+            </div>
+            <div class="footnote">
+              <p1>This was supposed to be Hannas character. I helped her make it and I was super happy with it. Shame she never played it.</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Ira -->
+      <div class="personbox unimportant" id="ira">
+        <div class="personimage" id="ira">
+        </div>
+        <div class="textbox">
+          <div class="personname">Ira</div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1>Much is yet to be understood of this little kobold. She truly tresures her friends and has protected them and taken care of them through thick and thin, always being a happy and hopeful despite being surrounded by cynics and
+                delinquents. </p1>
+            </div>
+            <div class="personparagraph">
+              <p1>The troubadouritz always has encouraging words and soothing music avaliable at a moments notice. She has saved the party from certain death many a time.</p1>
+            </div>
+            <div class="footnote">
+              <p1>On hiatus. Previously played by Mathilde Nordahl.</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Quai Lann the banished -->
+      <div class="personbox unimportant" id="quai">
+        <div class="personimage" id="quai">
+        </div>
+        <div class="textbox">
+          <div class="personname"> Quai Lann the banished </div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1> Banished from his home after his repugnant life of crime, this rouge set out on his own to create his own fortune. In recent times he has been traveling valisisa with the inctention of making a quick fortune of some of the anicent
+                treasure buried there.</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>His plan was quickly complicated though, when he met a band of merry heroes from Youn. More intrested in some prestigious patriotic mission than simple fortune.</p1>
+            </div>
+            <div class="footnote">
+              <p1>On hiatus. Previously played by Richard Dooley.</p1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--"peopleflexpc" closing tag-->
+    </div>
+
+    <h1 class=peoplesheading>Nonplayer characters</h1>
+    <div id="peopleflexNpc">
+
+
+      <!-- Cai Junnian -->
+      <div class="personbox unimportant" id="caijunnian">
+        <div class="personimage" id="caijunnian">
+        </div>
+        <div class="textbox">
+          <div class="personname">Cai Junnian</div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1>Cai Junnian was a military mastermind in the Taranian army, but he was shunned and disregarderd for his war mongering retoric. Eventually he garnered a big following, and led them in a campain against Exalia. Despite winning
+                several victories, the campaing eventually became untenable by the exalians superior numbers. Despite his defeat his army still desried to follow him, and so what was meant to just be a mere military encampent quickly became a
+                bustling city. Cai junnian, the general now turned king was not one for the civilian, but continued out of a sense of duty. He delgated duites to individuals he deemd most fit for them, and gave no preffirential treatment towards
+                his close firend. He would be remebered as a stern and fair ruler for centuries, and he set the example for all the following general-kings of the first cohort.</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>Nowadays it is belived that his body rests in the kingshill burial site, along with many other great heroes of the first cohort, but his spirit haunts Kaer Lorg, the fortress he ruled from. It is belived that if his spirit and
+                body is reunited he will grow an order of magnitude more powerful.</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Demon King Favan -->
+      <div class="personbox" id="favan">
+        <div class="personimage" id="favan">
+        </div>
+        <div class="textbox">
+          <div class="personname">Demon king Favan</div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1>Favan strated building the city of favanistan some ten thousand years ago. He made the city from nothing but the labour of his own two hand. Through the milennia the city grew into a bustling metropolis. These days favan is old
+                and tired, he is now working to secure his legacy and have someone carry on in his stead when he is gone. Originally the prince, Sturm, was the one meant to succed Favan, but sturm betrayed his father and was banished from the
+                realm</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>400 years ago Favan opened a portal to another realm, Valisia. He and his armies went there and wrought havoc on the few nations there, intent on using the land as a safe haven for people dear to him. The inhabitants of Valisia
+                were either killed or brought back to favanistan as slaves. He made the land completely unlivable for regular mortals, and cast a spell upon the world to erase all knowledge of it's history.</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>These days Favan is grey and old, and his body is frail and weakened. Although he remains more powerful than any living mortals and all the demons in the realm. Having wisened up over the years, he now seeks to secure a
+                succession with no surprises, although recent events has complicated that plan signiicantly. Whispers and rumours at court makes the looming threat of a succession crisis, civil war and anarchy all the more obvious to the man
+                himself. </p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Lady Elia Favansdottir -->
+      <div class="personbox" id="elia">
+        <div class="personimage" id="elia">
+        </div>
+        <div class="textbox">
+          <div class="personname">Lady Elia Favansdottir</div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1>The Second child of favan, Lady elia became heiress to Favans great kingdom after Sturm, favans firstborn son, betrayed him. Favan opened a porta lto valisia and sent lady elia there to protect her from the wrath of demon king
+                sturm, and other that might conspire against Favan.</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>Lady Elia has lived in valisia most her life, and the only contact she has had with her homeland is the odd letter from her father. She was recently killed, appartenly by a gang of brutes that broke into her home, the scene shows
+                signs of a herculian stuggle, she fought to her last breath.</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Pentarch Julian -->
+      <div class="personbox" id="julianos">
+        <div class="personimage" id="julianos">
+        </div>
+        <div class="textbox">
+          <div class="personname">Pentarch Julianos</div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1>One of the pentarchs ruling favanistan. He is usually close to Favan, acting as a one man personal guard. His imposing nature lets him rule with unquestioned authority in his pentarchy, even in absence.</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>Strong beyond measure, and loyal to a fault, he is instrumental in favans personal security, especially as old age increasingly weakens the man himself. Chatter at the court seems to be that in the coming succession crisis,
+                Julianos will be the kingmaker.</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Captain Macknight -->
+      <div class="personbox unimportant" id="mcknight">
+        <div class="personimage" id="mcknight">
+        </div>
+        <div class="textbox">
+          <div class="personname">Captain mcKnight</div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1>A brave and expirienced captain in the younish navy, he was sent to valisia on a top secret mission to secure the strange metal, IX-25, for the upcoming war effort. He met his end there, when his encampment was attacked by an
+                Exalian expedition party, competing for that very same metal.</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>But even from beyond the grave, his group of officers wrought havoc upon the Exalians, it is said that all but three were killed, and quite gruesomely as well. With the mysterious absence of his first mate, Juliet, his command
+                has now passed on to Kirgrim fennic, a captain in the younish army.</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- First mate Juliet -->
+      <div class="personbox unimportant" id="juliet">
+        <div class="personimage" id="juliet">
+        </div>
+        <div class="textbox">
+          <div class="personname">First mate Juliet</div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1>First mate juliet, an overly competent and driven woman served as first mate to McKnight before his untimely, she wears an eyepatch on her left eye, simmilarly to captain Fennic. She was never let in on the real reason for the
+                expedition, and was therefore always annoyed with it, seeing it as a pointless excercise in prestige.</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>After the ship was attacked by the Exalians, Juliet was nowhere to be found. Wether she was captured, killed or escaped yet remains a mystery.</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Eradin Lorekeeper -->
+      <div class="personbox unimportant" id="eradin">
+        <div class="personimage" id="eradin">
+        </div>
+        <div class="textbox">
+          <div class="personname">Eradin Lorekeeper</div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1> Historian, mathematician, philosopher, engineer and politcal maverick- Eradin's theories on the human soul and warrior spirit was instumental in turning the first cohort from a disillusioned army to a powerful nation-state. </p1>
+            </div>
+            <div class="personparagraph">
+              <p1>His work, while instrumentaal, consumed the man, and he grew restless and obsessive, which is why his spirit yet haunts kaer Lorg. His body rests in the cohorts old library. If his spirit was reunited with his body, his mind
+                might once again become unfractured and his keen insight and knowledge could provide a powerful asset for all he considers allies.</p1>
+            </div>
+            <div class="footnote">
+              <p1>I made up a name on the fly during a session and forgot about it. I don't think he was always called Eradin. </p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Udrex Firebearer -->
+      <div class="personbox unimportant" id="udrex">
+        <div class="personimage" id="udrex">
+        </div>
+        <div class="textbox">
+          <div class="personname"> Udrex Firebearer </div>
+
+          <div class="Scrollhoverbox">
+            <div class="personparagraph">
+              <p1> A brave and recognized captain from the hayday of the first cohort. He led plenty platoons into battle beneath the fire standard that would become his nickname. He was always facinated with fire, and most of his battleplans
+                often featured traps made with tar and oil. He believed that fire was the purest of the four elements, and as it was the only element without substance he believed it to be the most mythical as well</p1>
+            </div>
+            <div class="personparagraph">
+              <p1>He was relieved from duty after a massive fire in the king-generals estate. Although no concrete evidence was found linking him to the fire, he was still at the wrong place at the wrong time. When the next unexplained fire came
+                about the war council lost their patience, he was tied to a pyre and burned, being executed the same way he had executed so many in his military career. If his ashes was reunited with his spirit he might have quite the interesting
+                story to tell</p1>
+            </div>
+            <div class="footnote">
+              <p1>I made up a name on the fly during a session and forgot about it. I don't think he was always called Udrex</p1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!--"peopleflexNpc" closing tag-->
 
 
 
     <!--"mainbody" closing tag-->
-    </div>
+  </div>
 
-    <div class="bottom"></div>
+  <div class="bottom"></div>
 
 </body>
