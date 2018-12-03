@@ -1,3 +1,8 @@
+function initJQ(){
+  $(".personbox").css({"height":"162px"})
+}
+
+
 $(document).ready(function() {
   /*Åpner og lukker personbokser*/
   $(".personbox").click(function() {
