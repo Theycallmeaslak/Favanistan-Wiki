@@ -1,5 +1,7 @@
-function initJQ(){
-  $(".personbox").css({"height":"162px"})
+function initJQ() {
+  $(".personbox").css({
+    "height": "162px"
+  })
 }
 
 

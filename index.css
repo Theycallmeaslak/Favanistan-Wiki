@@ -95,7 +95,7 @@ a {
 .personbox {
   --expanded: 0;
   /*Brukes for å holde styr på om boksen er utvidet eller ikke*/
-  width: 45%;
+  width: 50%;
   height: 162px;
   margin: 20px;
   padding: 10px;
@@ -503,6 +503,18 @@ a {
 #musicgallery {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Dice roller*/
+#diceroller>input[type=number] {
+  padding: 2px;
+  width: 50px;
+}
+
+#diceroller>button {
+  display: block;
+  margin-top: 5px;
 }
 
 /* timeline */
