@@ -8,29 +8,29 @@ function d(x) {
 }
 
 function initDice() {
-  diceSelect = document.getElementById("diceselect")
-  diceAmount = document.getElementById("diceamount")
-  output = document.getElementById("output")
+  let diceSelect = document.getElementById("diceselect");
+  let diceAmount = document.getElementById("diceamount");
+  let output = document.getElementById("output");
   diceSelect.onchange = function() {
     document.getElementById("dice").innerHTML = "Roll " + diceamount.value + diceSelect.options[diceSelect.selectedIndex].text
   }
-  diceamount.onchange = diceselect.onchange
+  diceamount.onchange = diceselect.onchange;
 
-  diceButton = document.getElementById("dice")
+  var diceButton = document.getElementById("dice");
   diceButton.onclick = function() {
-    outStr = "";
-    diceVal = diceSelect.value;
-    rollAmount = diceAmount.value;
-    total = 0;
+    var outStr = "";
+    let diceVal = diceSelect.value;
+    let rollAmount = diceAmount.value;
+    var total = 0;
     if (diceVal != "%") {
       for (var i = 0; i < rollAmount; i++) {
-        currentRoll = d(diceVal);
+        let currentRoll = d(diceVal);
         total += currentRoll;
         outStr += currentRoll + "<br>";
       }
     } else {
       for (var i = 0; i < rollAmount; i++) {
-        currentRoll = d(100) - 1;
+        let currentRoll = d(100) - 1;
         total += currentRoll;
         outStr += currentRoll + "<br>";
       }
